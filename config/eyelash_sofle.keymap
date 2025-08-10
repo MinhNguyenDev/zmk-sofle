@@ -91,7 +91,7 @@
         layer_1 {
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp LS(MINUS)         &kp EQUAL
+&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
 &trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &zed_em_kay     &trans
@@ -115,11 +115,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &trans     &trans     &trans     &trans     &trans                   &mmv MOVE_UP                          &kp F6            &kp F7             &kp LS(N9)         &kp LS(N0)          &trans            &kp PSCRN
+&trans   &kp LS(N4)     &kp N1     &kp N2     &kp N3      &kp N0                &mmv MOVE_DOWN                        &kp STAR         &kp LS(N1)          &kp LBRC           &kp RBRC            &kp LS(N2)        &trans
+&trans   &kp DOT        &kp N4     &kp N5     &kp N6      &kp LS(BSLH)          &mmv MOVE_LEFT                        &kp LS(N7)       &kp LS(MINUS)       &kp LS(LBRC)       &kp LS(RBRC)        &kp LS(N5)         &kp LS(SQT)
+&trans   &kp FSLH       &kp N7     &kp N8     &kp N9      &kp PLUS              &mmv MOVE_RIGHT                       &kp LS(N3)       &kp EQUAL           &kp LS(COMM)       &kp LS(DOT)         &kp LS(N6)         &kp LC(PAUSE)
+&trans    &trans        &trans     &trans     &trans     &kp DELETE             &mkp LCLK                             &kp DELETE            &trans      &trans         &zed_em_kay         &trans
             >;
         };
     };
