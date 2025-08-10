@@ -128,7 +128,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&zed_em_kay'
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ins
   '2':
   - $$mdi:keyboard-esc$$
@@ -258,5 +258,5 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&zed_em_kay'
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ins
