@@ -86,22 +86,6 @@
             pwms = <&pwm0 0 PWM_MSEC(1) PWM_POLARITY_NORMAL>;
         };
     };
-
-    macros {
-        ZMK_MACRO(dot_spc,
-        wait-ms = <0>;
-        tap-ms = <5>;
-        bindings = <&kp DOT &kp SPACE &sk LSHFT>;
-        );
-        ZMK_MACRO(zed_em_kay,
-        wait-ms = <10>;
-        tap-ms = <5>;
-        bindings = <&kp Z &kp M &kp K>
-                , <&kp SPACE>
-                , <&kp R &kp O &kp C &kp K &kp S>
-                ;
-        );
-    };
 };
 
 &adc {

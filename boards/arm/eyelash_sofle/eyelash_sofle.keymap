@@ -34,6 +34,20 @@
             acceleration-exponent = <1>;      // 0
             time-to-max-speed-ms = <400>;      // 500
             delay-ms = <0>;                   //   10
+        };       
+    };
+
+    macros {
+        zed_em_kay: zed_em_kay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;            
+            bindings
+                = <&kp Z &kp M &kp K>
+                , <&kp SPACE>
+                , <&kp R &kp O &kp C &kp K &kp S>
+                ;
         };
     };
 
