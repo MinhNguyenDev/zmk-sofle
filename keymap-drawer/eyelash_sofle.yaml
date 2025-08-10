@@ -38,10 +38,10 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
+  - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
-  - Z
+  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
   - V
@@ -113,8 +113,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - Sft+END
-  - Ctl+HOME
-  - Ctl+END
+  - '&select_line'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+PAUSE BREAK
@@ -127,8 +127,8 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&select_line'
-  - '&zed_em_kay'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ins
   '2':
   - $$mdi:keyboard-esc$$
@@ -209,7 +209,7 @@ layers:
   - {t: Sft+0, s: Sft+)}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:printer-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&minh_email'
   - {t: Sft+4, s: Sft+$}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -258,5 +258,5 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&zed_em_kay'
+  - {t: '$$mdi:transfer$$', type: trans}
   - Ins
