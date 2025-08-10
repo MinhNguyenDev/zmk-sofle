@@ -79,8 +79,8 @@
             bindings = <
 &mt ESC GRAVE           &kp F1     &kp F2        &kp F3        &kp F4  &kp F5       &kp UP_ARROW            &kp F6     &kp F9     &kp F10     &kp F11         &kp F12     &lt 2 DELETE
 &mt LEFT_GUI TAB        &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW          &kp Y      &kp U      &kp I      &kp O            &kp P       &kp MINUS
-&mt LSHFT BSPC          &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW          &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
-&kp LCTRL               &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW         &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp BSLH
+&mt LSHFT BSPC          &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW          &kp H      &kp J      &kp K      &kp L            &mt LSHFT SEMI     &kp APOS
+&kp LCTRL               &mt LSHFT Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW         &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp BSLH
 &kp C_MUTE  &kp LCTRL  &kp UP_ARROW  &kp LEFT_ALT  &lt 3 ENTER   &mo 1              &kp ENTER               &kp TAB  &lt 3 SPACE  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
@@ -91,10 +91,10 @@
         layer_1 {
             bindings = <
 &kp ESC     &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp LS(F12)           &kp PSCRN
-&minh_email      &trans           &kp LC(S)       &kp LS(LC(F))    &kp LC(LA(F))    &kp LS(LC(T))      &mmv MOVE_DOWN   &kp END         &kp LC(LEFT_ARROW)          &kp UP_ARROW      &kp LC(RIGHT_ARROW)   &kp PG_UP             &kp ENTER
+&minh_email      &trans           &kp LC(S)       &kp LS(LC(F))    &kp LC(LA(F))    &kp LS(LC(T))      &mmv MOVE_DOWN   &kp END    &kp LC(LEFT_ARROW)          &kp UP_ARROW      &kp LC(RIGHT_ARROW)   &kp PG_UP             &kp ENTER
 &trans      &kp LC(A)        &trans          &kp LC(C)        &kp LC(V)        &kp DELETE         &mmv MOVE_LEFT   &kp HOME        &kp LEFT_ARROW              &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp PG_DN  &trans
-&trans      &kp LC(Z)        &kp LC(X)       &trans           &kp LSHFT        &kp LSHFT          &mmv MOVE_RIGHT  &kp LS(END)     &kp LC(HOME)  &kp LC(END)   &trans            &trans             &kp LC(PAUSE_BREAK)
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &kp DELETE           &trans           &select_line      &zed_em_kay     &kp INSERT
+&trans      &kp LC(Z)        &kp LC(X)       &trans           &kp LSHFT        &kp LSHFT          &mmv MOVE_RIGHT  &kp LS(END)     &select_line  &trans   &trans            &trans             &kp LC(PAUSE_BREAK)
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &kp DELETE           &trans           &trans      &trans     &kp INSERT
             >;
 
             display-name = "layer1";
@@ -116,10 +116,10 @@
         layer_3 {
             bindings = <
 &kp ESC    &trans     &trans     &trans     &trans     &trans                   &trans                          &kp F6            &kp F7             &kp LS(N9)         &kp LS(N0)          &trans            &kp PSCRN
-&trans   &kp LS(N4)     &kp N1     &kp N2     &kp N3      &kp N0                &trans                        &kp STAR         &kp LS(N1)          &kp LBRC           &kp RBRC              &kp LS(N2)        &trans
+&minh_email   &kp LS(N4)     &kp N1     &kp N2     &kp N3      &kp N0                &trans                        &kp STAR         &kp LS(N1)          &kp LBRC           &kp RBRC              &kp LS(N2)        &trans
 &trans   &kp DOT        &kp N4     &kp N5     &kp N6      &kp LS(BSLH)          &trans                        &kp LS(N7)       &kp LS(MINUS)       &kp LS(LBRC)       &kp LS(RBRC)        &kp LS(N5)         &kp LS(SQT)
 &trans   &kp FSLH       &kp N7     &kp N8     &kp N9      &kp PLUS              &trans                       &kp LS(N3)       &kp EQUAL           &kp LS(COMMA)       &kp LS(DOT)         &kp LS(N6)         &kp LC(PAUSE_BREAK)
-&trans    &trans        &trans     &trans     &trans     &kp DELETE             &trans                             &kp DELETE            &trans      &trans         &zed_em_kay         &kp INSERT
+&trans    &trans        &trans     &trans     &trans     &kp DELETE             &trans                             &kp DELETE            &trans      &trans         &trans         &kp INSERT
             >;
 
             display-name = "symbols";
