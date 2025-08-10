@@ -90,11 +90,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &zed_em_kay     &trans
+&kp ESC     &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp LS(F12)           &kp PSCRN
+&minh_email      &trans           &kp LC(S)       &kp LS(LC(F))    &kp LC(LA(F))    &kp LS(LC(T))      &mmv MOVE_DOWN   &kp END         &kp LC(LEFT_ARROW)          &kp UP_ARROW      &kp LC(RIGHT_ARROW)   &kp PG_UP             &kp ENTER
+&trans      &kp LC(A)        &trans          &kp LC(C)        &kp LC(V)        &kp DELETE         &mmv MOVE_LEFT   &kp HOME        &kp LEFT_ARROW              &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp PG_DN  &trans
+&trans      &kp LC(Z)        &kp LC(X)       &trans           &kp LSHFT        &kp LSHFT          &mmv MOVE_RIGHT  &kp LS(END)     &kp LC(HOME)  &kp LC(END)   &trans            &trans             &kp LC(PAUSE_BREAK)
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &kp DELETE           &trans           &select_line      &zed_em_kay     &kp INSERT
             >;
 
             display-name = "layer1";
@@ -103,11 +103,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&kp ESC  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP    &trans   &trans &trans   &trans    &trans      &trans
+&studio_unlock      &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &trans    &trans      &trans    &trans
+&studio_unlock     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &trans    &trans
+&studio_unlock     &sys_reset    &trans          &bootloader   &trans        &bootloader          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
+&trans     &trans        &trans          &trans        &rgb_ug RGB_OFF        &rgb_ug RGB_ON          &mkp LCLK        &rgb_ug RGB_EFR  &trans  &trans      &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
