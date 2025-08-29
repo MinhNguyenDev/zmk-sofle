@@ -262,6 +262,28 @@ layers:
   - Ins
 combos:
 - p: [28, 29]
-  k: Ctl+S
+  k: Ctl+C
 - p: [29, 30]
   k: Ctl+V
+- p: [40, 41]
+  k: Ctl+Z
+- p: [41, 42]
+  k: Ctl+X
+- p: [42, 43]
+  k: Ctl+S
+- p: [15, 16]
+  k: Ctl+A
+- p: [30, 34]
+  k: Ctl+L
+- p: [33, 35]
+  k: Ctl+W
+- p: [39, 38]
+  k: Ctl+H
+- p: [39, 40]
+  k: Ctl+F
+- p: [39, 41]
+  k: Ctl+$$mdi:keyboard-tab$$
+- p: [40, 41]
+  k: Ctl+Sft+$$mdi:keyboard-space$$
+- p: [31, 33]
+  k: $$mdi:keyboard-esc$$
