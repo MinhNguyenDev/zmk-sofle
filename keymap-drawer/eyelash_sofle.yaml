@@ -94,7 +94,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+A
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&select_sql'
   - Ctl+C
   - Ctl+V
   - $$mdi:backspace-reverse-outline$$
@@ -110,7 +110,7 @@ layers:
   - Ctl+X
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - Sft+END
   - '&select_line'
@@ -285,7 +285,7 @@ combos:
   k: Ctl+$$mdi:keyboard-tab$$
 - p: [35, 36]
   k: Ctl+Sft+$$mdi:keyboard-space$$
-- p: [46, 48]
+- p: [47, 49]
   k: Alt+$$mdi:keyboard-tab$$
 - p: [41, 43]
   k: $$mdi:keyboard-esc$$
