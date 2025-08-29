@@ -27,6 +27,21 @@
     trigger-period-ms = <16>;
 };
 
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <29 30>; // S and D
+            bindings = <&kp LC(S)>; // Sends Ctrl+S
+        };
+        combo_paste {
+            timeout-ms = <50>;
+            key-positions = <30 31>; // D and F
+            bindings = <&kp LC(V)>; // Sends Ctrl+V
+        };
+    };
+};
 
 / {
     macros {
@@ -80,7 +95,7 @@
 &mt ESC GRAVE           &kp F1     &kp F2        &kp F3        &kp F4  &kp F5       &kp UP_ARROW            &kp F6     &kp F9     &kp F10     &kp F11         &kp F12     &lt 2 DELETE
 &mt LEFT_GUI TAB        &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW          &kp Y      &kp U      &kp I      &kp O            &kp P       &kp MINUS
 &mt LSHFT BSPC          &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW          &kp H      &kp J      &kp K      &kp L            &mt LSHFT SEMI     &kp APOS
-&kp LCTRL               &mt LSHFT Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW         &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp BSLH
+&kp LCTRL               &mt LSHFT Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW         &kp N      &kp M      &mt UP_ARROW COMMA  &kp DOT          &kp FSLH    &kp BSLH
 &kp C_MUTE  &kp LCTRL  &kp UP_ARROW  &kp LEFT_ALT  &lt 3 ENTER   &mo 1              &kp ENTER               &kp TAB  &lt 3 SPACE  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
