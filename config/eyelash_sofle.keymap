@@ -56,46 +56,44 @@
         };
 
         combo_select_all {
-            key-positions = <15 16>; // Q + W
+            key-positions = <14 15>; // Q + W
             bindings = <&kp LC(A)>;
         };
 
         combo_select_line {
-            key-positions = <30 34>; // F + G
-            bindings = <&kp LC(L)>;
+            key-positions = <30 31>; // F + G
+            bindings = <&select_line>;
         };
 
         combo_select_word {
-            key-positions = <33 35>; // V + B
+            key-positions = <43 44>; // V + B
             bindings = <&kp LC(W)>;
         };
 
         combo_replace {
-            key-positions = <39 38>; // J + H
+            key-positions = <33 34>; // J + H
             bindings = <&kp LC(H)>;
         };
 
         combo_find {
-            key-positions = <39 40>; // J + K
+            key-positions = <34 35>; // J + K
             bindings = <&kp LC(F)>;
         };
 
         combo_switch_tab {
-            key-positions = <39 41>; // J + L
+            key-positions = <34 36>; // J + L
             bindings = <&kp LC(TAB)>;
         };
 
         combo_ctrl_shift_space {
-            key-positions = <40 41>; // K + L
+            key-positions = <35 36>; // K + L
             bindings = <&kp LC(LS(SPACE))>;
         };
 
         combo_escape {
-            key-positions = <31 33>; // X + V
+            key-positions = <41 43>; // X + V
             bindings = <&kp ESC>;
         };
-
-
     };
 };
 
