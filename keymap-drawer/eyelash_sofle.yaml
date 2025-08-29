@@ -261,7 +261,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ins
 combos:
-- p: [29, 30]
+- p: [28, 29]
   k: Ctl+S
-- p: [30, 31]
+- p: [29, 30]
   k: Ctl+V
