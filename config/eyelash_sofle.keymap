@@ -32,12 +32,12 @@
         compatible = "zmk,combos";
         combo_copy {
             timeout-ms = <50>;
-            key-positions = <29 30>; // S and D
+            key-positions = <28 29>; // S and D
             bindings = <&kp LC(S)>; // Sends Ctrl+S
         };
         combo_paste {
             timeout-ms = <50>;
-            key-positions = <30 31>; // D and F
+            key-positions = <29 30>; // D and F
             bindings = <&kp LC(V)>; // Sends Ctrl+V
         };
     };

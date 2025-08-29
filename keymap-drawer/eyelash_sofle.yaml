@@ -49,7 +49,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: ',', s: <}
+  - {t: ',', h: '$$mdi:arrow-up-bold$$', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: \, s: '|'}
@@ -260,3 +260,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Ins
+combos:
+- p: [29, 30]
+  k: Ctl+S
+- p: [30, 31]
+  k: Ctl+V
