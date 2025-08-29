@@ -67,7 +67,7 @@
 
         combo_select_word {
             key-positions = <43 44>; // V + B
-            bindings = <&kp LC(W)>;
+            bindings = <&select_word>;
         };
 
         combo_replace {
@@ -88,6 +88,11 @@
         combo_ctrl_shift_space {
             key-positions = <35 36>; // K + L
             bindings = <&kp LC(LS(SPACE))>;
+        };
+
+        combo_altTab {
+            key-positions = <46 48>; // M + .
+            bindings = <&kp LA(TAB)>;
         };
 
         combo_escape {
@@ -117,6 +122,13 @@
             tap-ms = <5>;
             bindings = <&kp HOME>, <&kp LS(END)>;
         };
+        select_word: select_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = <&kp LC(RIGHT_ARROW)>, <&kp LC(LS(LEFT_ARROW))>;
+        };        
         minh_email: minh_email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
