@@ -276,7 +276,7 @@ combos:
 - p: [30, 31]
   k: '&select_line'
 - p: [43, 44]
-  k: Ctl+W
+  k: '&select_word'
 - p: [33, 34]
   k: Ctl+H
 - p: [34, 35]
@@ -285,5 +285,7 @@ combos:
   k: Ctl+$$mdi:keyboard-tab$$
 - p: [35, 36]
   k: Ctl+Sft+$$mdi:keyboard-space$$
+- p: [46, 48]
+  k: Alt+$$mdi:keyboard-tab$$
 - p: [41, 43]
   k: $$mdi:keyboard-esc$$
