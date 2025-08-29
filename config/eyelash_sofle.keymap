@@ -91,7 +91,7 @@
         };
 
         combo_altTab {
-            key-positions = <46 48>; // M + .
+            key-positions = <47 49>; // M + .
             bindings = <&kp LA(TAB)>;
         };
 
@@ -144,6 +144,23 @@
                 , <&kp A &kp U>
             ;
         };
+        select_sql: select_sql {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;
+            bindings = 
+                <&kp S &kp E &kp L &kp E &kp C &kp T>
+                , <&kp SPACE>
+                , <&kp T &kp O &kp P>
+                , <&kp SPACE>
+                , <&kp N2 &kp N0 &kp N0>
+                , <&kp SPACE>
+                , <&kp STAR>
+                , <&kp SPACE>
+                , <&kp F &kp R &kp O &kp M>
+            ;
+        };        
     };
 
     scroll_encoder: scroll_encoder {
@@ -173,8 +190,8 @@
             bindings = <
 &kp ESC     &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp LS(F12)           &kp PSCRN
 &minh_email      &trans           &kp LC(S)       &kp LS(LC(F))    &kp LC(LA(F))    &kp LS(LC(T))      &mmv MOVE_DOWN   &kp END    &kp LC(LEFT_ARROW)          &kp UP_ARROW      &kp LC(RIGHT_ARROW)   &kp PG_UP             &kp ENTER
-&trans      &kp LC(A)        &trans          &kp LC(C)        &kp LC(V)        &kp DELETE         &mmv MOVE_LEFT   &kp HOME        &kp LEFT_ARROW              &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp PG_DN  &trans
-&trans      &kp LC(Z)        &kp LC(X)       &trans           &kp LSHFT        &kp LSHFT          &mmv MOVE_RIGHT  &kp LS(END)     &select_line  &trans   &trans            &trans             &kp LC(PAUSE_BREAK)
+&trans      &kp LC(A)        &select_sql          &kp LC(C)        &kp LC(V)        &kp DELETE         &mmv MOVE_LEFT   &kp HOME        &kp LEFT_ARROW              &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp PG_DN  &trans
+&trans      &kp LC(Z)        &kp LC(X)       &trans           &kp LSHFT        &kp LCTRL          &mmv MOVE_RIGHT  &kp LS(END)     &select_line  &trans   &trans            &trans             &kp LC(PAUSE_BREAK)
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &kp DELETE           &trans           &trans      &trans     &kp INSERT
             >;
 
