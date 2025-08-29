@@ -271,19 +271,19 @@ combos:
   k: Ctl+X
 - p: [42, 43]
   k: Ctl+S
-- p: [15, 16]
+- p: [14, 15]
   k: Ctl+A
-- p: [30, 34]
-  k: Ctl+L
-- p: [33, 35]
+- p: [30, 31]
+  k: '&select_line'
+- p: [43, 44]
   k: Ctl+W
-- p: [39, 38]
+- p: [33, 34]
   k: Ctl+H
-- p: [39, 40]
+- p: [34, 35]
   k: Ctl+F
-- p: [39, 41]
+- p: [34, 36]
   k: Ctl+$$mdi:keyboard-tab$$
-- p: [40, 41]
+- p: [35, 36]
   k: Ctl+Sft+$$mdi:keyboard-space$$
-- p: [31, 33]
+- p: [41, 43]
   k: $$mdi:keyboard-esc$$
