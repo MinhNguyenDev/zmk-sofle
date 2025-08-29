@@ -33,13 +33,69 @@
         combo_copy {
             timeout-ms = <50>;
             key-positions = <28 29>; // S and D
-            bindings = <&kp LC(S)>; // Sends Ctrl+S
+            bindings = <&kp LC(C)>; // Sends Ctrl+S
         };
         combo_paste {
             timeout-ms = <50>;
             key-positions = <29 30>; // D and F
             bindings = <&kp LC(V)>; // Sends Ctrl+V
         };
+        combo_undo {
+            key-positions = <40 41>; // Z + X
+            bindings = <&kp LC(Z)>;
+        };
+
+        combo_cut {
+            key-positions = <41 42>; // X + C
+            bindings = <&kp LC(X)>;
+        };
+
+        combo_save {
+            key-positions = <42 43>; // C + V
+            bindings = <&kp LC(S)>;
+        };
+
+        combo_select_all {
+            key-positions = <15 16>; // Q + W
+            bindings = <&kp LC(A)>;
+        };
+
+        combo_select_line {
+            key-positions = <30 34>; // F + G
+            bindings = <&kp LC(L)>;
+        };
+
+        combo_select_word {
+            key-positions = <33 35>; // V + B
+            bindings = <&kp LC(W)>;
+        };
+
+        combo_replace {
+            key-positions = <39 38>; // J + H
+            bindings = <&kp LC(H)>;
+        };
+
+        combo_find {
+            key-positions = <39 40>; // J + K
+            bindings = <&kp LC(F)>;
+        };
+
+        combo_switch_tab {
+            key-positions = <39 41>; // J + L
+            bindings = <&kp LC(TAB)>;
+        };
+
+        combo_ctrl_shift_space {
+            key-positions = <40 41>; // K + L
+            bindings = <&kp LC(LS(SPACE))>;
+        };
+
+        combo_escape {
+            key-positions = <31 33>; // X + V
+            bindings = <&kp ESC>;
+        };
+
+
     };
 };
 
