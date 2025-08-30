@@ -169,8 +169,8 @@
         macro_arrow: macro_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Equal &kp LS(DOT)>;
-    };
+            bindings = <&kp Equal>, <&kp LS(DOT)>;
+        };
       
     };
 
