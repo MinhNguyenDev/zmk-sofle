@@ -293,3 +293,11 @@ combos:
   k: '&macro_arrow_right'
 - p: [47, 48]
   k: '&macro_arrow_left'
+- p: [30, 17]
+  k: Gui+1
+- p: [31, 18]
+  k: Gui+2
+- p: [33, 20]
+  k: Gui+3
+- p: [34, 21]
+  k: Gui+4
