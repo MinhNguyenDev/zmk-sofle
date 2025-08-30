@@ -123,8 +123,8 @@
             bindings = <&kp LG(N3)>;
         }; 
         combo_window_4 {
-            key-postions = <34 21>; // U + J 
-            bindings = <&kp LG(N3)>;
+            key-positions = <34 21>; // U + J 
+            bindings = <&kp LG(N4)>;
         };                
     };
 };
