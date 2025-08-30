@@ -110,6 +110,22 @@
             bindings = <&macro_arrow_left>;
         };
 
+        combo_window_1 {
+            key-positions = <30 17>; // F + R
+            bindings = <&kp LG(N1)>;
+        };
+        combo_window_2 {
+            key-positions = <31 18>; // G + T
+            bindings = <&kp LG(N2)>;
+        };
+        combo_window_3 {
+            key-positions = <33 20>; // H + Y
+            bindings = <&kp LG(N3)>;
+        }; 
+        combo_window_4 {
+            key-postions = <34 21>; // U + J 
+            bindings = <&kp LG(N3)>;
+        };                
     };
 };
 
