@@ -289,3 +289,5 @@ combos:
   k: Alt+$$mdi:keyboard-tab$$
 - p: [41, 43]
   k: $$mdi:keyboard-esc$$
+- p: [48, 49]
+  k: Equal
