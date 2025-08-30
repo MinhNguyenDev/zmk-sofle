@@ -100,10 +100,16 @@
             bindings = <&kp ESC>;
         };
         
-        combo_arrow {
+        combo_arrow_right {
             key-positions = <48 49>; // , + .
-            bindings = <&macro_arrow>;
+            bindings = <&macro_arrow_right>;
         };
+
+        combo_arrow_left {
+            key-positions = <47 48>; // M + ,
+            bindings = <&macro_arrow_left>;
+        };
+
     };
 };
 
@@ -166,14 +172,20 @@
                 , <&kp F &kp R &kp O &kp M>
             ;
         };  
-        macro_arrow: macro_arrow {
+        macro_arrow_right: macro_arrow_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <5>;            
             bindings = <&kp EQUAL>, <&kp LS(DOT)>;
         };
-      
+        macro_arrow_left: macro_arrow_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <5>;            
+            bindings = <&kp LS(COMMA), <&kp EQUAL>;
+        };      
     };
 
     scroll_encoder: scroll_encoder {
@@ -228,8 +240,8 @@
             bindings = <
 &kp ESC    &trans     &trans     &trans     &trans     &trans                   &trans                          &kp F6            &kp F7             &kp LS(N9)         &kp LS(N0)          &trans            &kp PSCRN
 &minh_email   &kp LS(N4)     &kp N1     &kp N2     &kp N3      &kp N0                &trans                        &kp STAR         &kp LS(N1)          &kp LBRC           &kp RBRC              &kp LS(N2)        &trans
-&trans   &kp DOT        &kp N4     &kp N5     &kp N6      &kp LS(BSLH)          &trans                        &kp LS(N7)       &kp LS(MINUS)       &kp LS(LBRC)       &kp LS(RBRC)        &kp LS(N5)         &kp LS(SQT)
-&trans   &kp FSLH       &kp N7     &kp N8     &kp N9      &kp PLUS              &trans                       &kp LS(N3)       &kp EQUAL           &kp LS(COMMA)       &kp LS(DOT)         &kp LS(N6)         &kp LC(PAUSE_BREAK)
+&trans   &kp DOT        &kp N4     &kp N5     &kp N6      &kp LS(BSLH)          &trans                        &kp LS(N7)       &kp LS(MINUS)       &kp LS(N9)       &kp LS(N0)        &kp LS(N5)         &kp LS(SQT)
+&trans   &kp FSLH       &kp N7     &kp N8     &kp N9      &kp PLUS              &trans                       &kp LS(N3)       &kp EQUAL           &kp LS(LBRC)       &kp LS(RBRC)         &kp LS(N6)         &kp LC(PAUSE_BREAK)
 &trans    &trans        &trans     &trans     &trans     &kp DELETE             &trans                             &kp DELETE            &trans      &trans         &trans         &kp INSERT
             >;
 
