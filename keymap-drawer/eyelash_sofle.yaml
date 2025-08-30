@@ -231,8 +231,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Sft+7, s: Sft+&}
   - {t: Sft+-, s: Sft+_}
-  - Sft+{
-  - Sft+}
+  - {t: Sft+9, s: Sft+(}
+  - {t: Sft+0, s: Sft+)}
   - {t: Sft+5, s: Sft+%}
   - {t: Sft+', s: Sft+"}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -244,8 +244,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Sft+3, s: Sft+#}
   - {t: '=', s: +}
-  - {t: 'Sft+,', s: Sft+<}
-  - {t: Sft+., s: Sft+>}
+  - Sft+{
+  - Sft+}
   - {t: Sft+6, s: Sft+^}
   - Ctl+PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
@@ -290,4 +290,6 @@ combos:
 - p: [41, 43]
   k: $$mdi:keyboard-esc$$
 - p: [48, 49]
-  k: '&macro_arrow'
+  k: '&macro_arrow_right'
+- p: [47, 48]
+  k: '&macro_arrow_left'
