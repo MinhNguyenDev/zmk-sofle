@@ -99,6 +99,11 @@
             key-positions = <41 43>; // X + V
             bindings = <&kp ESC>;
         };
+        
+        combo_arrow {
+            key-positions = <48 49>; // , + .
+            bindings = <&kp Equal &kp LS(DOT)>;
+        };
     };
 };
 
