@@ -102,7 +102,7 @@
         
         combo_arrow {
             key-positions = <48 49>; // , + .
-            bindings = <&kp Equal &kp LS(DOT)>;
+            bindings = <&kp Equal, &kp LS(DOT)>;
         };
     };
 };
