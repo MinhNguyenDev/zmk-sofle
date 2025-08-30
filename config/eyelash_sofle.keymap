@@ -102,7 +102,7 @@
         
         combo_arrow {
             key-positions = <48 49>; // , + .
-            bindings = <&kp Equal, &kp LS(DOT)>;
+            bindings = <&macro_arrow>;
         };
     };
 };
@@ -165,7 +165,13 @@
                 , <&kp SPACE>
                 , <&kp F &kp R &kp O &kp M>
             ;
-        };        
+        };  
+        macro_arrow: macro_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Equal &kp LS(DOT)>;
+    };
+      
     };
 
     scroll_encoder: scroll_encoder {
