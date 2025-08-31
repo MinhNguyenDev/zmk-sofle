@@ -16,5 +16,12 @@
 
 
 ZMK_LEADER_SEQUENCE(channelId,  &macro_channelId,     C SPACE)  // ChannelId
+ZMK_LEADER_SEQUENCE(applicationId,  &macro_applicationId,     A SPACE)  // ApplicationId
+ZMK_LEADER_SEQUENCE(select_sql, &select_sql,        S E SPACE)  // select sql
+ZMK_LEADER_SEQUENCE(patch,      &macro_patch,       P A SPACE)  // patch
+ZMK_LEADER_SEQUENCE(tama5,      &macro_TAMA5,       T A SPACE)  // TAMA5
+ZMK_LEADER_SEQUENCE(minor,      &macro_minor,       M I SPACE)  // minor
+ZMK_LEADER_SEQUENCE(foreach,    &macro_foreach,     F E SPACE)  // for each
+
 
 
