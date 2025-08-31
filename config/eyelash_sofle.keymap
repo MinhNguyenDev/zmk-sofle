@@ -266,7 +266,7 @@
                 , <&kp LBRC>
                 , <&kp ENTER>
                 , <&kp ENTER>
-                , <&kp RBRC &kp UP_ARROW &kp UP_ARROW &kp HOME &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW &kp RIGHT_ARROW>
+                , <&kp RBRC>
             ;
         };
         macro_if_block: macro_if_block {
