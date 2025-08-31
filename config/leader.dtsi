@@ -31,6 +31,7 @@ ZMK_LEADER_SEQUENCE(nolock,    &macro_nolock,      N SPACE)  // nolock
 ZMK_LEADER_SEQUENCE(where,    &macro_where,        W SPACE)  // where
 ZMK_LEADER_SEQUENCE(bugfix,    &macro_bugfix,      B SPACE)  // bugfix
 ZMK_LEADER_SEQUENCE(var_assign,    &macro_var,     V SPACE)  // var assign
+ZMK_LEADER_SEQUENCE(phone,    &macro_phone,        O SPACE)  // 0400000000
 
 
 
