@@ -13,9 +13,9 @@
 #include "leader.dtsi"
 #include "helpers.h"
 
-&lt {
-    flavor = "hold-preferred";
-};
+// &lt {
+//     flavor = "hold-preferred";
+// };
 
 / {
     shortcuts {
