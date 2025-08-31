@@ -1,4 +1,5 @@
-
+#define TAPPING_TERM 250
+#define QUICK_TAP_TERM 175
     /*  TAP HOLDS  */
 
     #define TAPHOLD_TP(NAME, TAP, HOLD) \
@@ -6,6 +7,8 @@
             compatible = "zmk,behavior-hold-tap"; \
             flavor = "hold-preferred"; \
             #binding-cells = <2>; \
+            tapping-term-ms = <TAPPING_TERM>; \
+            quick-tap-ms = <QUICK_TAP_TERM>; \            
             bindings = <HOLD>, <TAP>; \
         };
 
