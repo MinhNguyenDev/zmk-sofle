@@ -225,7 +225,7 @@
         #binding-cells = <0>;
         flavor = "hold-preferred";
         tapping-term-ms = <200>;  // adjust to your tap speed
-        bindings = <&kp LALT>, <&leader>; // Hold = Left Alt, Tap = Leader key
+        bindings = <&leader &kp LALT>; // Hold = Left Alt, Tap = Leader key
         };
     };
     keymap {
