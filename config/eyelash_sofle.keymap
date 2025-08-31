@@ -207,7 +207,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
-            tap-ms = <5>;            
+            tap-ms = <1>;
             bindings = <&kp LS(C) &kp H &kp A &kp N &kp N &kp E &kp L &kp LS(I) &kp D>;
         };
     };
@@ -218,7 +218,16 @@
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         tap-ms = <100>;
     };
-
+    behaviors {
+        hold_alt_tap_leader: hold_alt_tap_leader {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOLD_ALT_TAP_LEADER";
+        #binding-cells = <0>;
+        flavor = "hold-preferred";
+        tapping-term-ms = <200>;  // adjust to your tap speed
+        bindings = <&kp LALT>, <&leader>; // Hold = Left Alt, Tap = Leader key
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
 
@@ -227,8 +236,8 @@
 &mt ESC GRAVE           &kp F1     &kp F2        &kp F3        &kp F4  &kp F5       &kp UP_ARROW            &kp F6     &kp F9     &kp F10     &kp F11         &kp F12     &lt 2 DELETE
 &mt LEFT_GUI TAB        &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW          &kp Y      &kp U      &kp I      &kp O            &kp P       &kp MINUS
 &mt LSHFT BSPC          &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW          &kp H      &kp J      &kp K      &kp L            &mt LSHFT SEMI     &kp APOS
-&kp LCTRL               &mt LSHFT Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW         &kp N      &kp M      &mt UP_ARROW COMMA  &kp DOT          &kp FSLH    &leader
-&kp C_MUTE  &kp LCTRL  &kp UP_ARROW  &kp LEFT_ALT  &lt 3 ENTER   &mo 1              &kp ENTER               &kp TAB  &lt 3 SPACE  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp LCTRL               &mt LSHFT Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW         &kp N      &kp M      &mt UP_ARROW COMMA  &kp DOT          &kp FSLH    &kp BSLH
+&kp C_MUTE  &kp LCTRL  &kp UP_ARROW  &hold_alt_tap_leader  &lt 3 ENTER   &mo 1              &kp ENTER               &kp TAB  &lt 3 SPACE  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -251,9 +260,9 @@
         layer_2 {
             bindings = <
 &kp ESC  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP    &trans   &trans &trans   &trans    &trans      &trans
-&studio_unlock      &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &trans    &trans      &trans    &trans
-&studio_unlock     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &trans    &trans
-&studio_unlock     &sys_reset    &trans          &bootloader   &trans        &bootloader          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
+&studio_unlock      &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &trans    &trans      &trans    &out OUT_USB
+&studio_unlock     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &trans    &out OUT_USB
+&studio_unlock     &sys_reset    &trans          &bootloader   &trans        &bootloader          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &out OUT_USB
 &trans     &trans        &trans          &trans        &rgb_ug RGB_OFF        &rgb_ug RGB_ON          &mkp LCLK        &rgb_ug RGB_EFR  &trans  &trans      &trans     &trans
             >;
 
