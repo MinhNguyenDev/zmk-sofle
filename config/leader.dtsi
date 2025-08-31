@@ -30,4 +30,4 @@ ZMK_LEADER_SEQUENCE(channelId,  &macro_channelId,     C SPACE)  // ChannelId
     };
 
 
-
+TAPHOLD_TP(th_leader_alt, &leader, &kp LALT)
