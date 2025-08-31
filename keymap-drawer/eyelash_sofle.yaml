@@ -52,11 +52,11 @@ layers:
   - {t: ',', h: '$$mdi:arrow-up-bold$$', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - '&leader'
+  - {t: \, s: '|'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:arrow-up-bold$$
-  - $$mdi:apple-keyboard-option$$
+  - '&hold_alt_tap_leader'
   - {t: '$$mdi:keyboard-return$$', h: symbols}
   - layer1
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -156,7 +156,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - OUT USB
   - '&studio_unlock'
   - OUT USB
   - OUT BLE
@@ -169,7 +169,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - OUT USB
   - '&studio_unlock'
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -182,7 +182,7 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - '&soft_off'
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - OUT USB
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
