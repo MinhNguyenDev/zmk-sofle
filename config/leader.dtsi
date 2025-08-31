@@ -20,6 +20,8 @@ ZMK_LEADER_SEQUENCE(applicationId,  &macro_applicationId,     A SPACE)  // Appli
 ZMK_LEADER_SEQUENCE(select_sql, &select_sql,        S E SPACE)  // select sql
 ZMK_LEADER_SEQUENCE(string,     &macro_string,        S SPACE)  // string
 ZMK_LEADER_SEQUENCE(patch,      &macro_patch,       P SPACE)  // patch
+ZMK_LEADER_SEQUENCE(public,      &macro_public,       P U SPACE)  // public
+ZMK_LEADER_SEQUENCE(private,      &macro_private,       P R SPACE)  // private
 ZMK_LEADER_SEQUENCE(tama5,      &macro_TAMA5,       T SPACE)  // TAMA5
 ZMK_LEADER_SEQUENCE(minor,      &macro_minor,       M SPACE)  // minor
 ZMK_LEADER_SEQUENCE(feature,    &macro_feature,     F SPACE)  // feature

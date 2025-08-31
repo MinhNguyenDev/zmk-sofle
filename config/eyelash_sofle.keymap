@@ -256,16 +256,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
-            tap-ms = <2>;
+            tap-ms = <1>;
             bindings =
                 <&kp F &kp O &kp R &kp E &kp A &kp C &kp H>
                 , <&kp SPACE>
                 , <&kp LS(N9) &kp V &kp A &kp R &kp SPACE &kp R &kp E &kp C &kp O &kp R  &kp D>
                 , <&kp SPACE &kp I &kp N &kp SPACE &kp O &kp B &kp J &kp S &kp LS(N0)>
                 , <&kp SPACE>
-                , <&kp LBRC>
-                , <&kp ENTER>
-                , <&kp ENTER>
+                , <&kp LBRC &kp RBRC>
             ;
         };
         macro_if_block: macro_if_block {
@@ -311,6 +309,20 @@
             wait-ms = <0>;
             tap-ms = <1>;
             bindings = <&kp B &kp U &kp G &kp F &kp I &kp X>;
+        };
+        macro_public: macro_public {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <1>;
+            bindings = <&kp P &kp U &kp B &kp L &kp I &kp C>;
+        };
+        macro_private: macro_private {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <1>;
+            bindings = <&kp P &kp R &kp I &kp V &kp A &kp T &kp E>;
         };
         macro_feature: macro_feature {
             compatible = "zmk,behavior-macro";
