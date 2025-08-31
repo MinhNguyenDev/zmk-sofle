@@ -218,8 +218,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '*'
   - {t: Sft+1, s: Sft+!}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - '{'
+  - '}'
   - {t: Sft+2, s: Sft+@}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
