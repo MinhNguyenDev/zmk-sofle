@@ -10,11 +10,8 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "helpers.h"
 #include "leader.dtsi"
-
-MACRO(mc_lalt, &macro_tap &kp LALT)
-TAPHOLD_TP(th_leader_alt, &leader, &mc_lalt)
+#include "helpers.h"
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
