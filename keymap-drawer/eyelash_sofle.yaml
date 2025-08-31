@@ -55,8 +55,8 @@ layers:
   - {t: \, s: '|'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:arrow-up-bold$$
-  - {t: '&leader', h: '&mc_lalt'}
+  - $$mdi:apple-keyboard-option$$
+  - '&leader'
   - {t: '$$mdi:keyboard-return$$', h: symbols}
   - layer1
   - {t: '$$mdi:keyboard-return$$', type: enter}
