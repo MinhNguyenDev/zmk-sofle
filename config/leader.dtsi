@@ -21,6 +21,7 @@ ZMK_LEADER_SEQUENCE(channelId,  &macro_channelId,     C SPACE)  // ChannelId
 #define TAPHOLD_TP(NAME, TAP, HOLD) \
         NAME: NAME { \
         compatible = "zmk,behavior-hold-tap"; \
+        label = "HOLD_ALT_TAP_LEADER"; \
         flavor = "hold-preferred"; \
         #binding-cells = <2>; \
         tapping-term-ms = <TAPPING_TERM>; \
