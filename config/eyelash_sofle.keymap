@@ -266,7 +266,6 @@
                 , <&kp LBRC>
                 , <&kp ENTER>
                 , <&kp ENTER>
-                , <&kp RBRC &kp SPACE>
             ;
         };
         macro_if_block: macro_if_block {
