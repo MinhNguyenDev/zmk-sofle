@@ -39,11 +39,8 @@
     #define TAPHOLD_TP(NAME, TAP, HOLD) \
          NAME: NAME { \
             compatible = "zmk,behavior-hold-tap"; \
-            flavor = "tap-preferred"; \
+            flavor = "hold-preferred"; \
             #binding-cells = <2>; \
-            tapping-term-ms = <TAPPING_TERM>; \
-            quick-tap-ms = <QUICK_TAP_TERM>; \
-            require-prior-idle-ms = <QUICK_TAP_TERM>; \
             bindings = <HOLD>, <TAP>; \
         };
 
