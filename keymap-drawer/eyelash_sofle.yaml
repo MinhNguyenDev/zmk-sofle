@@ -56,7 +56,7 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:arrow-up-bold$$
-  - '&th_leader_alt'
+  - {t: '&leader', h: '&mc_lalt'}
   - {t: '$$mdi:keyboard-return$$', h: symbols}
   - layer1
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -218,8 +218,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '*'
   - {t: Sft+1, s: Sft+!}
-  - '{'
-  - '}'
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: Sft+2, s: Sft+@}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
