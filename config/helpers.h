@@ -150,5 +150,3 @@
 
     /*  END  */
 
-MACRO(mc_lalt, &macro_tap &kp LALT)
-TAPHOLD_TP(th_leader_alt, &leader, &mc_lalt)    
