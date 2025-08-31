@@ -56,7 +56,7 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:arrow-up-bold$$
-  - '&hold_alt_tap_leader'
+  - '&th_leader_alt'
   - {t: '$$mdi:keyboard-return$$', h: symbols}
   - layer1
   - {t: '$$mdi:keyboard-return$$', type: enter}
