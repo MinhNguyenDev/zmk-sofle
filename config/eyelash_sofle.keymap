@@ -290,6 +290,13 @@
             tap-ms = <1>;
             bindings = <&kp LS(N9) &kp N &kp O &kp L &kp O &kp C &kp K &kp LS(N0)>;
         };
+        macro_string: macro_string {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <1>;
+            bindings = <&kp S &kp T &kp R &kp I &kp N &kp G &kp SPACE>;
+        };        
         macro_where: macro_where {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
