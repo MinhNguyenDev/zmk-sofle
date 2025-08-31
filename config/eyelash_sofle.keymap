@@ -260,7 +260,8 @@
             bindings =
                 <&kp F &kp O &kp R &kp E &kp A &kp C &kp H>
                 , <&kp SPACE>
-                , <&kp LS(N9) &kp V &kp A &kp R &kp SPACE &kp R &kp E &kp C &kp O &kp R  &kp D &kp SPACE &kp I &kp N &kp SPACE &kp O &kp B &kp J &kp E &kp C &kp T &kp S &kp LS(N0)>
+                , <&kp LS(N9) &kp V &kp A &kp R &kp SPACE &kp R &kp E &kp C &kp O &kp R  &kp D>
+                , <&kp SPACE &kp I &kp N &kp SPACE &kp O &kp B &kp J &kp S &kp LS(N0)>
                 , <&kp SPACE>
                 , <&kp LBRC>
                 , <&kp ENTER>
