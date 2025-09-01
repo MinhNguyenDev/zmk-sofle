@@ -185,7 +185,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <5>;
-            bindings = <&kp LS(END), <&kp DELETE>;
+            bindings = <&kp LS(END)>, <&kp DELETE>;
         };
         minh_email: minh_email {
             compatible = "zmk,behavior-macro";
