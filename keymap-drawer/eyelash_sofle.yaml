@@ -277,6 +277,10 @@ combos:
   k: '&select_line'
 - p: [43, 44]
   k: '&select_word'
+- p: [28, 30]
+  k: Sft+END
+- p: [29, 31]
+  k: '&macro_deleteToEnd'
 - p: [33, 34]
   k: Ctl+H
 - p: [34, 35]
