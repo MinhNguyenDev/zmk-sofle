@@ -38,17 +38,6 @@
     };
 
     macros {
-        zed_em_kay: zed_em_kay {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;            
-            bindings
-                = <&kp Z &kp M &kp K>
-                , <&kp SPACE>
-                , <&kp R &kp O &kp C &kp K &kp S>
-                ;
-        };
         select_line: select_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -103,7 +92,7 @@
 &trans      &trans           &kp LC(S)       &kp LS(LC(F))    &kp LC(LA(F))    &kp LS(LC(T))      &mmv MOVE_DOWN   &kp END         &kp LC(LEFT_ARROW)          &kp UP_ARROW      &kp LC(RIGHT_ARROW)   &kp PG_UP             &kp ENTER
 &trans      &kp LC(A)        &trans          &kp LC(C)        &kp LC(V)        &kp DELETE         &mmv MOVE_LEFT   &kp HOME        &kp LEFT_ARROW              &kp DOWN_ARROW    &kp RIGHT_ARROW       &kp PG_DN  &trans
 &trans      &kp LC(Z)        &kp LC(X)       &trans           &kp LSHFT        &kp LSHFT          &mmv MOVE_RIGHT  &kp LS(END)     &kp LC(HOME)  &kp LC(END)   &trans            &trans             &kp LC(PAUSE)
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &kp DELETE           &trans           &trans      &zed_em_kay     &kp INSERT
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &kp DELETE           &trans           &trans      &trans     &kp INSERT
             >;
 
             display-name = "layer1";
@@ -128,7 +117,7 @@
 &trans   &kp LS(N4)     &kp N1     &kp N2     &kp N3      &kp N0                &mmv MOVE_DOWN                        &kp STAR         &kp LS(N1)          &kp LBRC           &kp RBRC            &kp LS(N2)        &trans
 &trans   &kp DOT        &kp N4     &kp N5     &kp N6      &kp LS(BSLH)          &mmv MOVE_LEFT                        &kp LS(N7)       &kp LS(MINUS)       &kp LS(LBRC)       &kp LS(RBRC)        &kp LS(N5)         &kp LS(SQT)
 &trans   &kp FSLH       &kp N7     &kp N8     &kp N9      &kp PLUS              &mmv MOVE_RIGHT                       &kp LS(N3)       &kp EQUAL           &kp LS(COMM)       &kp LS(DOT)         &kp LS(N6)         &kp LC(PAUSE)
-&trans    &trans        &trans     &trans     &trans     &kp DELETE             &mkp LCLK                             &kp DELETE            &trans      &trans         &zed_em_kay         &kp INSERT
+&trans    &trans        &trans     &trans     &trans     &kp DELETE             &mkp LCLK                             &kp DELETE            &trans      &trans         &trans         &kp INSERT
             >;      
 
             display-name = "symbols";

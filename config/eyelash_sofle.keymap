@@ -21,8 +21,8 @@
     shortcuts {
 
         MACRO(mc_lalt, &macro_tap &kp LALT)
+        MACRO(select_line, &macro_tap &kp HOME &kp LS(END))
         TAPHOLD_TP(th_leader_alt, &leader, &mc_lalt)
-
    };
 };
 
@@ -49,6 +49,7 @@
             timeout-ms = <50>;
             key-positions = <28 29>; // S and D
             bindings = <&kp LC(C)>; // Sends Ctrl+S
+
         };
         combo_paste {
             timeout-ms = <50>;
@@ -88,91 +89,87 @@
         combo_select_toEnd {
             key-positions = <28 30>; // S + F
             bindings = <&kp LS(END)>;
+            layers = <0>;
         };
 
         combo_delete_toEnd {
             key-positions = <29 31>; // D + G
             bindings = <&macro_deleteToEnd>;
+            layers = <0>;
         };
         combo_replace {
             key-positions = <33 34>; // J + H
             bindings = <&kp LC(H)>;
+            layers = <0>;
         };
 
         combo_find {
             key-positions = <34 35>; // J + K
             bindings = <&kp LC(F)>;
+            layers = <0>;
         };
 
         combo_switch_tab {
             key-positions = <34 36>; // J + L
             bindings = <&kp LC(TAB)>;
+            layers = <0>;
         };
 
         combo_ctrl_shift_space {
             key-positions = <35 36>; // K + L
             bindings = <&kp LC(LS(SPACE))>;
+            layers = <0>;
         };
 
         combo_altTab {
             key-positions = <47 49>; // M + .
             bindings = <&kp LA(TAB)>;
+            layers = <0>;
         };
 
         combo_escape {
             key-positions = <41 43>; // X + V
             bindings = <&kp ESC>;
+            layers = <0>;
         };
         
         combo_arrow_right {
             key-positions = <48 49>; // , + .
             bindings = <&macro_arrow_right>;
+            layers = <0>;
         };
 
         combo_arrow_left {
             key-positions = <47 48>; // M + ,
             bindings = <&macro_arrow_left>;
+            layers = <0>;
         };
 
         combo_window_1 {
             key-positions = <30 17>; // F + R
             bindings = <&kp LG(N1)>;
+            layers = <0>;
         };
         combo_window_2 {
             key-positions = <31 18>; // G + T
             bindings = <&kp LG(N2)>;
+            layers = <0>;
         };
         combo_window_3 {
             key-positions = <33 20>; // H + Y
             bindings = <&kp LG(N3)>;
+            layers = <0>;
         }; 
         combo_window_4 {
             key-positions = <34 21>; // U + J 
             bindings = <&kp LG(N4)>;
+            layers = <0>;
         };                
     };
 };
 
 / {
     macros {
-        zed_em_kay: zed_em_kay {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;            
-            bindings
-                = <&kp Z &kp M &kp K>
-                , <&kp SPACE>
-                , <&kp R &kp O &kp C &kp K &kp S>
-                ;
-        };
-        select_line: select_line {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <5>;
-            bindings = <&kp HOME>, <&kp LS(END)>;
-        };
         select_word: select_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
