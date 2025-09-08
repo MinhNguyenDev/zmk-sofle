@@ -278,7 +278,7 @@ combos:
 - p: [43, 44]
   k: '&select_word'
 - p: [28, 30]
-  k: Sft+END
+  k: Ctl+F
   l: [LAYER0]
 - p: [29, 31]
   k: '&macro_deleteToEnd'
