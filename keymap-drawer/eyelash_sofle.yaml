@@ -295,9 +295,6 @@ combos:
 - p: [35, 36]
   k: Ctl+Sft+$$mdi:keyboard-space$$
   l: [LAYER0]
-- p: [47, 49]
-  k: Alt+$$mdi:keyboard-tab$$
-  l: [LAYER0]
 - p: [41, 43]
   k: $$mdi:keyboard-esc$$
   l: [LAYER0]
@@ -306,16 +303,4 @@ combos:
   l: [LAYER0]
 - p: [47, 48]
   k: '&macro_arrow_left'
-  l: [LAYER0]
-- p: [30, 17]
-  k: Gui+1
-  l: [LAYER0]
-- p: [31, 18]
-  k: Gui+2
-  l: [LAYER0]
-- p: [33, 20]
-  k: Gui+3
-  l: [LAYER0]
-- p: [34, 21]
-  k: Gui+4
   l: [LAYER0]
