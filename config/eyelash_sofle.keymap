@@ -17,6 +17,10 @@
 //     flavor = "hold-preferred";
 // };
 
+&mt {
+    quick-tap-ms = <150>;
+};
+
 / {
     shortcuts {
 
