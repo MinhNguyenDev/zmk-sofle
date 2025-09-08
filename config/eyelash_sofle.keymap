@@ -134,7 +134,7 @@
         };
         
         combo_arrow_right {
-            key-positions = <48 49>; // , + .
+            key-positions = <47 49>; // M + .
             bindings = <&macro_arrow_right>;
             layers = <0>;
         };
