@@ -90,9 +90,9 @@
             bindings = <&select_word>;
         };
 
-        combo_select_toEnd {
+        combo_find2 {
             key-positions = <28 30>; // S + F
-            bindings = <&kp LS(END)>;
+            bindings = <&kp LC(F)>;
             layers = <0>;
         };
 
