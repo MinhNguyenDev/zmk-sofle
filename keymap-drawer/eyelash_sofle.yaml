@@ -301,7 +301,7 @@ combos:
 - p: [41, 43]
   k: $$mdi:keyboard-esc$$
   l: [LAYER0]
-- p: [48, 49]
+- p: [47, 49]
   k: '&macro_arrow_right'
   l: [LAYER0]
 - p: [47, 48]
