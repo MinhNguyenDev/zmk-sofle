@@ -246,7 +246,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <1>;
-            bindings = <&kp LS(A) &kp P &kp P &kp L &kp I &kp C &kp A &kp T &kp I &kp O &kp N &kp LS(I) &kp D>;
+            bindings = <&kp LS(A) &kp P &kp P &kp L &kp I &kp C &kp A &kp T &kp I &kp O &kp N>;
         };
         macro_TAMA5: macro_TAMA5 {
             compatible = "zmk,behavior-macro";
