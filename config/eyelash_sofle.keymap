@@ -131,9 +131,9 @@
         //     layers = <0>;
         // };
 
-        combo_escape {
+        combo_home {
             key-positions = <41 43>; // X + V
-            bindings = <&kp ESC>;
+            bindings = <&kp HOME>;
             layers = <0>;
         };
         
