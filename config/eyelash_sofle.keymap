@@ -18,7 +18,7 @@
 // };
 
 &mt {
-    quick-tap-ms = <190>;
+    quick-tap-ms = <245>;
 };
 
 / {
