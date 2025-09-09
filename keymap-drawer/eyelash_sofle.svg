@@ -696,7 +696,7 @@ rect.held, rect.combo.held {
 <path d="M196,203 l-37,0" class="combo"/>
 <path d="M196,203 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="182" y="190" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="187" y="194" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
+<text x="196" y="203" class="combo tap">HOME</text>
 </g>
 <g class="combo combopos-15">
 <path d="M728,203 l-37,0" class="combo"/>

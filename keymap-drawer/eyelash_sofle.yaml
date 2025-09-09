@@ -296,7 +296,7 @@ combos:
   k: Ctl+Sft+$$mdi:keyboard-space$$
   l: [LAYER0]
 - p: [41, 43]
-  k: $$mdi:keyboard-esc$$
+  k: HOME
   l: [LAYER0]
 - p: [47, 49]
   k: '&macro_arrow_right'
