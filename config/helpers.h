@@ -5,7 +5,7 @@
     #define TAPHOLD_TP(NAME, TAP, HOLD) \
          NAME: NAME { \
             compatible = "zmk,behavior-hold-tap"; \
-            flavor = "hold-preferred"; \
+            flavor = "tap-preferred"; \
             #binding-cells = <2>; \
             tapping-term-ms = <TAPPING_TERM>; \
             quick-tap-ms = <QUICK_TAP_TERM>; \            
