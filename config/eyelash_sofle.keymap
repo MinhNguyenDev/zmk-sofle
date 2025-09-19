@@ -25,7 +25,15 @@
     shortcuts { 
 
         MACRO(select_line, &macro_tap &kp HOME &kp LS(END))
-        TAPHOLD_TP(th_comma_up, &kp COMMA, &kp UP_ARROW)
+        
+        myThTap: myThTap {
+            compatible = "zmk,behavior-mod-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
+            bindings = <&kp>, <&kp>;
+        };
    };
 };
 
@@ -375,11 +383,11 @@
 
         layer0 {
             bindings = <
-&mt ESC GRAVE           &kp F1     &kp F2        &kp F3        &kp F4  &kp F5       &kp UP_ARROW            &kp F6     &kp F9               &kp F10         &kp F11         &kp F12     &lt 2 DELETE
-&mt LEFT_GUI TAB        &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW          &kp Y      &kp U                &kp I           &kp O            &kp P       &kp MINUS
-&mt LSHFT BSPC          &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW          &kp H      &kp J                &kp K           &kp L            &mt LSHFT SEMI     &kp APOS
-&kp LCTRL               &mt LSHFT Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW         &kp N      &kp M          &th_comma_up    &kp DOT          &kp FSLH    &kp BSLH
-&kp C_MUTE  &kp LCTRL  &kp LALT  &leader &lt 3 ENTER   &mo 1              &kp ENTER               &kp TAB  &lt 3 SPACE  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW
+&mt ESC GRAVE           &kp F1     &kp F2        &kp F3        &kp F4  &kp F5       &kp UP_ARROW            &kp F6     &kp F9               &kp F10                     &kp F11         &kp F12     &lt 2 DELETE
+&mt LEFT_GUI TAB        &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW          &kp Y      &kp U                &kp I                       &kp O            &kp P       &kp MINUS
+&mt LSHFT BSPC          &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW          &kp H      &kp J                &kp K                       &kp L            &mt LSHFT SEMI     &kp APOS
+&kp LCTRL               &mt LSHFT Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW         &kp N      &kp M          &myThTap UP_ARROW COMMA     &kp DOT          &kp FSLH    &kp BSLH
+&kp C_MUTE  &kp LCTRL  &kp LALT  &leader &lt 3 ENTER   &mo 1              &kp ENTER               &kp TAB  &lt 3 SPACE  &kp LEFT_ARROW      &kp DOWN_ARROW              &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
