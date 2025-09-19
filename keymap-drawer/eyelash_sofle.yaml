@@ -49,7 +49,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: ',', h: '$$mdi:arrow-up-bold$$', s: <}
+  - '&th_comma_up'
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: \, s: '|'}
