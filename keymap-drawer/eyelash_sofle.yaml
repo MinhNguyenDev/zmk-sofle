@@ -49,7 +49,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - '&myThTap UP_ARROW COMMA'
+  - {t: ',', h: '$$mdi:arrow-up-bold$$', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: \, s: '|'}
