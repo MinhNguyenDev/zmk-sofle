@@ -34,6 +34,15 @@
             quick-tap-ms = <QUICK_TAP_TERM>;
             bindings = <&kp>, <&kp>;
         };
+
+        myLtHold: layer-tap-with-hold-preferred {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM>;
+            flavor = "hold-preferred";
+            quick-tap-ms = <QUICK_TAP_TERM>;
+            bindings = <&mo>, <&kp>;
+        };        
    };
 };
 
@@ -386,8 +395,8 @@
 &mt ESC GRAVE           &kp F1     &kp F2        &kp F3        &kp F4  &kp F5       &kp UP_ARROW            &kp F6     &kp F9               &kp F10                     &kp F11         &kp F12     &lt 2 DELETE
 &mt LEFT_GUI TAB        &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW          &kp Y      &kp U                &kp I                       &kp O            &kp P       &kp MINUS
 &mt LSHFT BSPC          &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW          &kp H      &kp J                &kp K                       &kp L            &mt LSHFT SEMI     &kp APOS
-&kp LCTRL               &mt LSHFT Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW         &kp N      &kp M          &myThTap UP_ARROW COMMA     &kp DOT          &kp FSLH    &kp BSLH
-&kp C_MUTE  &kp LCTRL  &kp LALT  &leader &lt 3 ENTER   &mo 1              &kp ENTER               &kp TAB  &lt 3 SPACE  &kp LEFT_ARROW      &kp DOWN_ARROW              &kp RIGHT_ARROW
+&kp LCTRL               &mt LSHFT Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW         &kp N      &kp M          &myThTap UP_ARROW COMMA     &kp DOT          &kp FSLH    &mt RSHFT BSLH
+&kp C_MUTE  &kp LCTRL  &kp LALT  &leader &myLtHold 3 ENTER   &mo 1              &kp ENTER               &kp TAB  &lt 3 SPACE  &kp LEFT_ARROW      &kp DOWN_ARROW              &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -422,10 +431,10 @@
         layer_3 {
             bindings = <
 &kp ESC    &trans     &trans     &trans     &trans     &trans                   &trans                          &kp F6            &kp F7             &kp LS(N9)         &kp LS(N0)          &trans            &kp PSCRN
-&minh_email   &kp LS(N4)     &kp N1     &kp N2     &kp N3      &kp N0                &trans                        &kp STAR         &kp LS(N1)          &kp LBKT           &kp RBKT              &kp LS(N2)        &trans
-&trans   &kp DOT        &kp N4     &kp N5     &kp N6      &kp LS(BSLH)          &trans                        &kp LS(N7)       &kp LS(MINUS)       &kp LS(N9)       &kp LS(N0)        &kp LS(N5)         &kp LS(SQT)
-&trans   &kp FSLH       &kp N7     &kp N8     &kp N9      &kp PLUS              &trans                       &kp LS(N3)       &kp EQUAL           &kp LBRC       &kp RBRC         &kp LS(N6)         &kp LC(PAUSE_BREAK)
-&trans    &trans        &trans     &trans     &trans     &kp DELETE             &trans                             &kp DELETE            &trans      &trans         &trans         &kp INSERT
+&minh_email     &kp LS(N4)      &kp N1     &kp N2     &kp N3      &kp N0                &trans                        &kp STAR         &kp LS(N1)          &kp LBKT         &kp RBKT         &kp LS(N2)        &trans
+&trans          &kp DOT         &kp N4     &kp N5     &kp N6      &kp LS(BSLH)          &trans                        &kp LS(N7)       &kp LS(MINUS)       &kp LS(N9)       &kp LS(N0)       &kp LS(N5)         &kp LS(SQT)
+&trans          &kp FSLH        &kp N7     &kp N8     &kp N9      &kp PLUS              &trans                        &kp LS(N3)       &kp EQUAL           &kp LBRC         &kp RBRC         &kp LS(N6)         &kp LC(PAUSE_BREAK)
+&trans          &trans          &trans     &trans     &trans     &kp DELETE             &trans                        &kp DELETE            &trans      &trans         &trans         &kp INSERT
             >;
 
             display-name = "symbols";
